@@ -1,16 +1,81 @@
-# React + Vite
+# 🛍️ eCommerce React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es un proyecto de eCommerce desarrollado con **React** y **Vite**, pensado como práctica para aprender el uso de **componentes**, **rutas**, **manejo de estado**, y conexión con una API de productos.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tecnologías utilizadas
 
-## React Compiler
+- ⚛️ React 18
+- ⚡ Vite
+- 🧭 React Router DOM
+- 🎨 CSS (estilos personalizados)
+- 🔄 useState y useEffect para manejo de estado y llamadas a API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📂 Estructura del proyecto
+```
+src/
+├── components/
+│ ├── layout/
+│ │ └── Layout.jsx
+│ ├── carrito/
+│ │ └── Carrito.jsx
+│ ├── productos/
+│ │ ├── ListaProductos.jsx
+│ │ ├── Producto.jsx
+│ │ └── DetalleProducto.jsx
+│ └── pages/
+│ ├── Inicio.jsx
+│ ├── Error404.jsx
+│ └── CarritoPage.jsx
+├── App.jsx
+├── main.jsx
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+```
+---
+
+## 🧠 Funcionalidades principales
+
+- ✅ Listado de productos traídos desde una API
+- 🛒 Agregar y eliminar productos del carrito
+- 🔍 Ver detalle de un producto
+- 🧭 Navegación entre páginas con React Router
+- ⚙️ Estructura limpia y modular (Layout, Pages, Components)
+
+---
+
+## ⚙️ Cómo ejecutar el proyecto
+
+1. Cloná este repositorio:
+   
+    https://github.com/Polaco88h/ecomerce-react-vite.git
+Entrá al directorio del proyecto:
+
+```
+
+cd ecomerce-react-vite
+Instalá las dependencias:
+
+```
+
+npm install
+Iniciá el servidor de desarrollo:
+
+```
+
+npm run dev
+Abrí la app en tu navegador:
+
+
+http://localhost:5173
+
+```
+
+✨ Autor
+👨‍💻 Claudio “Polaco88h”
+📍 Buenos Aires, Argentina
+📧 [r.polaco18@gmail.com]
+```
