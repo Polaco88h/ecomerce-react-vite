@@ -10,7 +10,7 @@ function Carrito({ carrito, eliminarDelCarrito }) {
         padding: "20px",
       }}
     >
-      <h2 style={{ color: "#fff", marginBottom: "20px" }}> Mi Carrito</h2>
+      <h2 style={{ color: "#fff", marginBottom: "20px" }}> Mi carrito</h2>
 
       <div
         style={{
