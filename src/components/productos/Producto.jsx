@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { CarritoContext } from "../../Context/CarritoContext";
 
-function Producto({ producto, agregarAlCarrito }) {
+function Producto({ producto }) {
+  const {agregarAlCarrito} = useContext(CarritoContext);
   return (
     <div style={{ border: "1px solid #ccc", padding: "10px" }}>
       <img src={producto.image} alt={producto.title} width="100" />

@@ -26,8 +26,9 @@ export default function DetalleProducto() {
 
   return (
     <div>
-      <h2>{producto.title}</h2>
+      <h2>Detalle del producto n: {id}</h2>
       <img src={producto.image} alt={producto.title} width="200" />
+      <h2>{producto.title}</h2>
       <p>{producto.description}</p>
       <p>Precio: ${producto.price}</p>
     </div>

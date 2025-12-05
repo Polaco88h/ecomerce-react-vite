@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Producto from "./producto";
+import { CarritoContext } from "../../Context/CarritoContext";
 
-function ListaProductos({agregarAlCarrito}){
+function ListaProductos(){
+
     const [productos,setProductos] = useState([]);
     const [cargando,setCargando] = useState(true);
     const [error,setError] = useState(null);
+
+    //usamos el contexto
+    const {agregarAlCarrito} = useContext(CarritoContext);
 
     useEffect(()=>{
         fetch("https://fakestoreapi.com/products")
@@ -25,11 +30,11 @@ function ListaProductos({agregarAlCarrito}){
     return(
         <div>
             <h2>Productos</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
+            {<div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "20px" }}>
                 {productos.map((p) => (
                     <Producto key={p.id} producto={p} agregarAlCarrito={agregarAlCarrito}/>
                 ))}
-            </div>
+            </div> }
         </div>
     )
 }

@@ -7,6 +7,8 @@ function NavBar() {
         Inicio
       </Link>
       <Link to="/carrito">Carrito</Link>
+      <Link to="contacto">Contacto</Link>
+      <Link to="/Admin">Admin</Link>
     </nav>
   );
 }
