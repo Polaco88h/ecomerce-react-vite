@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import Producto from "./producto";
+import Producto from "./Producto";
 import { CarritoContext } from "../../Context/CarritoContext";
 
 function ListaProductos(){
