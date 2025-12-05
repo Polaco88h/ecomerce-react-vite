@@ -2,7 +2,7 @@
 import { Routes, Route } from "react-router-dom";
 import Error404 from "./components/pages/Error404";
 import Inicio from "./components/pages/Inicio";
-import Layout from "./components/layout/Layout";
+import Layout from "./components/layout/layout";
 import DetalleProducto from "./components/productos/DetalleProducto";
 import CarritoPage from "./components/pages/CarritoPages";
 import Contacto from "./components/Contacto";
