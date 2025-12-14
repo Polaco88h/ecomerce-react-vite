@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
+import { useAuthContext } from "../../Context/AuthContext";
 import NavBar from "./NavBar";
 
 function Header() {
+
+ const {usuario,logout} = useAuthContext();
+ const estaLogueado = !!usuario;
+
   return (
     <header
       style={{
@@ -24,6 +30,11 @@ function Header() {
         eCommerce
       </h1>
       <NavBar />
+
+      {estaLogueado ? <button onClick={logout}>Cerrar Sesion</button>: 
+      <Link to={"/login"}>
+        <button>Ingresa</button>
+      </Link>}
     </header>
   );
 }
